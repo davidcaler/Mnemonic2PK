@@ -10,20 +10,11 @@
 
       <b>Result: </b>
       <br>
-      Address: <input <b> value="<%= query.addr %>" </b>
-      <input onclick="copyad();" class="btn btn-sm btn-outline-success" type=button value="Copy Address">
-      function handleClick() {
-      
-        var input = document.getElementById("Address").value;
-       
-        navigator.clipboard.writeText(input);
-         
-        alert("Copied Text: " + input);
-    }
-    
-      <br>
-      PrivateKey: <input id="pk" value="<%= query.pk %>">
+      PrivateKey: <b><%= query.pk %> </b> <input id="ad">
       <input onclick="copyPK();" class="btn btn-sm btn-outline-success" type=button value="Copy PrivateKey">
+      <br>
+      Address: <input id="pk" value="<%= query.addr %>">
+      <input onclick="copyad();" class="btn btn-sm btn-outline-success" type=button value="Copy Address">
 
       <hr>
 
